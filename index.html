@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript</title>
+</head>
+<body>
+    <div>
+        <h1>Find the Reverse of a String, entered by the user.</h1>
+        
+        <div class="a">
+            <p>
+                Enter String : 
+            </p>
+            
+            <p>
+                <input type = "text" id = "string"></input>
+            </p>
+        
+            <p>
+                <button onclick = "reverse()"> Reverse</button>
+            </p>
+
+            <p id = "result1" class="r"></p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div>
+        <h1>Find that the Number entered by the user is palindrome or not.</h1>
+        
+        <div class="a">
+            <p>
+                Enter Number : 
+            </p>
+            
+            <p>
+                <input type = "text" id = "pal"></input>
+            </p>
+        
+            <p>
+                <button onclick = "palindrome()"> Check</button>
+            </p>
+
+            <p id = "result2" class="r"></p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div>
+        <h1>Calculate the total amount to be paid including the tip by the user.</h1>
+        
+        <div class="a">
+            <p>
+                Enter Sub-total of bill : 
+            </p>
+            
+            <p>
+                <input type = "number" id = "bill"></input>
+            </p>
+
+            <p>
+                Enter Tip Percentage : 
+            </p>
+            
+            <p>
+                <input type = "number" id = "tip"></input>
+            </p>
+        
+            <p>
+                <button onclick = "total()"> Check</button>
+            </p>
+
+            <p id = "result3" class="r"></p>
+        </div>
+    </div>
+
+    <div class="a">
+        <p>
+            To check all the above functionalities.
+        </p>
+        <p>
+            <button onclick = "reverse(); palindrome(); total()"> Check All</button>
+        </p>
+    </div>
+</body>
+</html>
