@@ -7,19 +7,23 @@ function reverse(str) {
     document.getElementById("result1").innerHTML="The Reversed String is : " + s1;
 }
 
-function palindrome() {
-    var s1="";
-    var s=String(document.getElementById("pal").value);
-    for (var i = s.length - 1; i >= 0; i--) {
-        s1 = s1 + s[i];
+function palindrome() {    
+    var a=0;
+    var n=Number(document.getElementById("pal").value);
+    var n1=n;
+    while(n>0){
+        var r=n%10;
+        a=a*10 + r;
+        n=Math.floor(n/10);
     }
-    if(s1==s){
+    // a=n%10;
+    // n=Math.floor(n/100);
+    if(a==n1){
         document.getElementById("result2").innerHTML="YES, the number is Palindrome";
     }
     else{
         document.getElementById("result2").innerHTML="NO, the number is not Palindrome";
     }
-    
 }
 
 function total() {
